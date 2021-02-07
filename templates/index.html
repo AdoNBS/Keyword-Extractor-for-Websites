@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Keyword Extraction with Textrank and KeyBERT algorithms from the given websites
+    </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body class='text-white'>
+
+    <div class="icon-bar">
+        <a href="https://www.linkedin.com/in/elvin-agammed/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/elvinaqa" class="github"><i class="fa fa-github"></i></a>
+        <a href="https://github.com/elvinaqa" class="google"><i class="fa fa-google"></i></a>
+        <a href="https://twitter.com/aghammadzada" class="twitter"><i class="fa fa-twitter"></i></a>
+
+    </div>
+
+    <div class='container'>
+        <div class='margin'><span class="big-text" style="color:#009933">Welcome!</span></div>
+
+        <div><span class='med-text' style='color:#001f9f'>Keyword Extraction with TFKeras, Textrank, Gensim tools and libs written in Python.</span></div>
+        <form action="{{ url_for('results') }}" method="POST" class='margin'>
+            <div class="form-group">
+                <label for="command" style="font-size: 150%;">Any requests, intents, websites to ask for? Ex: https://www.binance.com/en </label>
+                <textarea name='command' type="text" placeholder='Ex: just like any other helper bot; say, a website url :)' class="form-control"></textarea>
+            </div>
+            <button type="submit" style='background-color:#950740; margin-top: 10px;' class="butto">Submit</button>
+        </form>
+    </div>
+    <div class="center">
+      <label><input type='checkbox' name="Language" ></label>
+      <div><span class='med-text' style='color:#001f9f'>Note: Option gonna be added as for selecting which attributes to look for in a specific website.</span></div>
+    </div>
+    </div>
+</body>
+
+
+</html>
