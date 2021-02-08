@@ -1,6 +1,6 @@
-# Keyword-Extractor-for-Websites
+# Keyword-Extractor-for-Websites-with-NLP-application
 
-A tool for Extracting keywords from given attributes of a particular website
+A tool for Extracting keywords and finding the relevant words with cosine similarity, Textrank Algorithm and KeyBERT tranformer model.
 
 # Keyword Extractor: A Smart, Automatic, Fast and Lightweight Keyword Extractor with Deep Learning Application with Python
 
@@ -31,6 +31,8 @@ $ pip install -r requirements.txt
 ### Results
 ![img](https://github.com/elvinaqa/Keyword-Extractor-for-Websites/blob/main/images/2nd%20oage.PNG)
 
+
+## Example code from the project
 ```python
 from gensim.summarization import keywords
 from gensim.summarization.keywords import get_graph
